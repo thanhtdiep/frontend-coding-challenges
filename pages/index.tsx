@@ -40,6 +40,15 @@ export default function Home() {
         >
           <Comment comment={DATA.comments} className='mt-[2rem]' />
         </Section>
+        {/* Autocomplete/Typeadhead */}
+        <Section
+          numbering='3'
+          heading='Autocomplete/Typeahead'
+          description='Design an auto suggestion input which shows suggestion on user input'
+        >
+          
+
+        </Section>
       </main>
 
       <footer className={styles.footer}>
