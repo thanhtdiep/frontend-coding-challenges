@@ -1,0 +1,55 @@
+{
+    "comments": {
+        "user": {
+            "name": "Dummy User",
+            "id": 1
+        },
+        "id": 1,
+        "parent_id": null,
+        "content": "Hello, world",
+        "comments": [
+            {
+                "user": {
+                    "name": "User 1",
+                    "id": 2
+                },
+                "id": 2,
+                "parent_id": 1,
+                "content": "this is my comment 1",
+                "comments": [
+                    {
+                        "user": {
+                            "name": "User 12",
+                            "id": 3
+                        },
+                        "id": 3,
+                        "parent_id": 2,
+                        "content": "this is my nested comment",
+                        "comments": [
+                            {
+                                "user": {
+                                    "name": "User 123",
+                                    "id": 4
+                                },
+                                "id": 4,
+                                "parent_id": 3,
+                                "content": "this is my next level nested comment",
+                                "comments": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "user": {
+                    "name": "User 2",
+                    "id": 5
+                },
+                "id": 5,
+                "parent_id": 1,
+                "content": "this is my component 2",
+                "comments": []
+            }
+        ]
+    }
+}

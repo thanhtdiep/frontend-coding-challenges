@@ -5,6 +5,7 @@ import Rating from '../components/Rating';
 import Comment from '../components/Comment';
 import React from 'react';
 import Section from '../components/layout/Section'
+import DATA from '../statics.json';
 
 export default function Home() {
   // Rating
@@ -26,8 +27,10 @@ export default function Home() {
           heading='Star Rating'
           description='Create a star rating utility highlights on hover and selects to click'
         >
-          <Rating value={rating} length={5} className='mt-[2rem]'
-            onClick={(v) => setRating(v)} />
+          <div className='flex flex-1 justify-center items-center'>
+            <Rating value={rating} length={5} className='mt-[2rem]'
+              onClick={(v) => setRating(v)} />
+          </div>
         </Section>
         {/* Comment Box */}
         <Section
@@ -35,7 +38,7 @@ export default function Home() {
           heading='Comment box'
           description='Develop an N level comment box'
         >
-          <Comment className='' />
+          <Comment comment={DATA.comments} className='mt-[2rem]' />
         </Section>
       </main>
 

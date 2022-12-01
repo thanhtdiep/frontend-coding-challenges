@@ -23,7 +23,7 @@ const Section: FC<SectionProps> = ({ children, className, heading, headingStyle,
                     {description && <p className={`${descriptionStyle} text-xs sm:text-sm text-black`}>{description}</p>}
                 </div>
             </div>
-            <div className='flex flex-1 self-center'>
+            <div className='flex flex-1 self-center w-full'>
                 {children}
             </div>
         </div>
