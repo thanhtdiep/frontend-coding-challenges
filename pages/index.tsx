@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Rating from '../components/Rating';
+import Autocomplete from '../components/Autocomplete';
 import Comment from '../components/Comment';
 import React from 'react';
 import Section from '../components/layout/Section'
@@ -46,12 +47,21 @@ export default function Home() {
           heading='Autocomplete/Typeahead'
           description='Design an auto suggestion input which shows suggestion on user input'
         >
+          <div className='flex flex-col flex-1 max-h-[12rem] mt-[1rem]'>
+            <Autocomplete suggestions={DATA.suggestions} />
+          </div>
+        </Section>
+        {/* Todo List */}
+        <Section
+          numbering='3'
+          heading='Todo List'
+          description='Create a Todo list app to perform CRUD operations'
+        >
           
-
         </Section>
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -62,7 +72,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
