@@ -83,7 +83,7 @@ const Autocomplete: FC<Props> = ({ suggestions }) => {
 
     return (
         <>
-            <div className='flex flex-row'>
+            <div className='flex flex-row relative'>
                 <input
                     type="text"
                     onChange={onChange}
@@ -91,7 +91,7 @@ const Autocomplete: FC<Props> = ({ suggestions }) => {
                     value={input.value}
                     className='flex flex-1 border-2 border-gray-400 p-2 focus:outline-none'
                 />
-                <div className='absolute right-12 mt-3'>
+                <div className='right-4 absolute mt-3'>
                     {input.show ?
                         <Icon icon={faCaretDown} className='w-3 text-gray-400' />
                         :

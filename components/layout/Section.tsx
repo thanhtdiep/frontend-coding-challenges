@@ -3,6 +3,7 @@ import React, { FC } from 'react'
 interface SectionProps {
     children?: React.ReactNode,
     className?: string,
+    childClassName?: string,
     headingStyle?: string,
     descriptionStyle?: string,
     heading?: string,
@@ -12,7 +13,7 @@ interface SectionProps {
     [x: string]: any
 }
 
-const Section: FC<SectionProps> = ({ children, className, heading, headingStyle, description, descriptionStyle, numbering, ...others }) => {
+const Section: FC<SectionProps> = ({ children, className, childClassName, heading, headingStyle, description, descriptionStyle, numbering, ...others }) => {
 
     return (
         <div className={`${className} flex flex-1 flex-col w-full items-start mb-[6rem]`}>
@@ -23,7 +24,7 @@ const Section: FC<SectionProps> = ({ children, className, heading, headingStyle,
                     {description && <p className={`${descriptionStyle} text-xs sm:text-sm text-black`}>{description}</p>}
                 </div>
             </div>
-            <div className='flex flex-1 self-center w-full'>
+            <div className={`flex flex-1 self-center w-[50%] ${childClassName}`}>
                 {children}
             </div>
         </div>

@@ -45,19 +45,20 @@ export default function Home() {
         <Section
           numbering='3'
           heading='Autocomplete/Typeahead'
+          childClassName='min-h-[15rem]'
           description='Design an auto suggestion input which shows suggestion on user input'
         >
-          <div className='flex flex-col flex-1 max-h-[12rem] mt-[1rem]'>
+          <div className='flex flex-col flex-1 max-h-[14rem] mt-[1rem]'>
             <Autocomplete suggestions={DATA.suggestions} />
           </div>
         </Section>
         {/* Todo List */}
         <Section
-          numbering='3'
+          numbering='4'
           heading='Todo List'
           description='Create a Todo list app to perform CRUD operations'
         >
-          
+
         </Section>
       </main>
 

@@ -113,7 +113,7 @@ const Comment: FC<Props> = ({ comment, className }) => {
 
             </div>
             {/* Action section */}
-            <div className='flex flex-col mt-2 ml-[2rem]' >
+            <div className='flex flex-col mt-2 ml-[1rem] sm:ml-[2rem]' >
                 {/* Text box */}
                 {textArea &&
                     <div className='flex flex-col flex-1 w-full border-2 shadow-lg rounded-lg p-2 mb-2 text-xs sm:text-sm'>
